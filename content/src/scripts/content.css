@@ -1,0 +1,17 @@
+#testing {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(140, 15, 179);
+    border-radius: 50px;
+    font-size: 5em;
+    color: white;
+}
+
+.content-testing {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(140, 15, 179);
+    border-radius: 50px;
+    font-size: 5em;
+    color: white;
+}

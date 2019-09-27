@@ -16,8 +16,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        Count: {this.props.count}
+      <div className='content-testing'>
+        <p>injected scripts!</p>
       </div>
     );
   }

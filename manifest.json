@@ -3,6 +3,7 @@
   "name": "Youtube Navigator",
   "description": "Navigate through Youtube throughout the whole browser!",
   "version": "0.0.1",
+  "permissions": ["*://*.youtube.com/*", "tabs"],
   "background": {
     "scripts": [
       "event.js"
@@ -15,7 +16,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
+      "matches": ["*://www.youtube.com/watch?v*"],
       "css": [],
       "js": ["content.js"]
     }
