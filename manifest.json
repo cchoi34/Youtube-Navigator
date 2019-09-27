@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Navigator",
+  "description": "Navigate through Youtube throughout the whole browser!",
+  "version": "0.0.1",
+  "background": {
+    "scripts": [
+      "event.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Youtube-Navigator",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ]
+}
