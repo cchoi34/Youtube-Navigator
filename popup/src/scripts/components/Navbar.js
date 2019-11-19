@@ -12,10 +12,18 @@ class Navbar extends Component {
     }
 
     render() {
+        let rawTitle = this.props.tab.title;
+        let cleanTitle;
+        if (rawTitle.startsWith("(")) {
+            let closingIndex = rawTitle.indexOf(")");
+            cleanTitle = rawTitle.slice(closingIndex + 2, rawTitle.length);
+        }
+
+        const 
         return (
             <div className={`single-navbar ${this.props.color}`}>
                 <div className="title center">
-                    <p className='song-title'>{this.props.tab.title}</p>
+                    <p className='song-title'>{cleanTitle}</p>
                 </div>
 
                 <div className="toolbar center">

@@ -11163,6 +11163,14 @@ var Navbar = function (_Component) {
     _createClass(Navbar, [{
         key: 'render',
         value: function render() {
+            console.log("props: ", this.props);
+            console.log("Title: ", this.props.tab.title);
+            var rawTitle = this.props.tab.title;
+            var cleanTitle = void 0;
+            if (rawTitle.startsWith("(")) {
+                var closingIndex = rawTitle.indexOf(")");
+                cleanTitle = rawTitle.slice(closingIndex + 2, rawTitle.length);
+            }
             return _react2.default.createElement(
                 'div',
                 { className: 'single-navbar ' + this.props.color },
@@ -11172,7 +11180,7 @@ var Navbar = function (_Component) {
                     _react2.default.createElement(
                         'p',
                         { className: 'song-title' },
-                        this.props.tab.title
+                        cleanTitle
                     )
                 ),
                 _react2.default.createElement(
@@ -12204,7 +12212,7 @@ module.exports = factory;
 
 exports = module.exports = __webpack_require__(105)(false);
 // Module
-exports.push([module.i, "body {\n    width: 230px;\n    height: 90px;\n    background-color: white;\n}\n\nbutton {\n    background-color: transparent;\n    border-style: none;\n    margin: 0% 5% 5%;\n    padding: 0px;\n}\n\nbutton i {\n    color: rgb(2, 104, 95);\n}\n\nbutton i:hover {\n    color: rgb(149, 236, 229);\n}\n\n.completed-progress {\n    height: 2px;\n}\n\n.navbar {\n    color: rgb(1, 133, 122);\n    text-align: center;\n}\n\n.progress-bar {\n    width: 180px;\n    height: 2px;\n    background-color: rgb(192, 192, 192)\n}\n\n.single-navbar {\n    height: 80px;\n    border-bottom: 2px solid rgb(6, 155, 118);\n}\n\n.song-title {\n    width: 200px;\n    height: 24px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n    font-family: Verdana, Geneva, Tahoma, sans-serif;\n    font-size: 20px;\n}\n\n/* color themes */\n\n.green {\n    color: rgb(7, 117, 7);\n}\n\n.green-blue {\n    color: rgb(13, 118, 122);\n}\n\n.more-blue {\n    color: rgb(9, 96, 136);\n}\n\n.blue {\n    color: rgb(9, 19, 148);\n}\n", ""]);
+exports.push([module.i, "body {\r\n    width: 230px;\r\n    height: 90px;\r\n    background-color: white;\r\n}\r\n\r\nbutton {\r\n    background-color: transparent;\r\n    border-style: none;\r\n    margin: 0% 5% 5%;\r\n    padding: 0px;\r\n}\r\n\r\nbutton i {\r\n    color: rgb(2, 104, 95);\r\n}\r\n\r\nbutton i:hover {\r\n    color: rgb(149, 236, 229);\r\n}\r\n\r\n.completed-progress {\r\n    height: 2px;\r\n}\r\n\r\n.navbar {\r\n    color: rgb(0, 0, 0);\r\n    text-align: center;\r\n}\r\n\r\n.progress-bar {\r\n    width: 180px;\r\n    height: 2px;\r\n    background-color: rgb(192, 192, 192)\r\n}\r\n\r\n.single-navbar {\r\n    height: 80px;\r\n    border-bottom: 2px solid rgb(6, 155, 118);\r\n}\r\n\r\n.song-title {\r\n    width: 200px;\r\n    height: 24px;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-size: 20px;\r\n}\r\n\r\n/* color themes */\r\n\r\n.green {\r\n    color: rgb(7, 117, 7);\r\n}\r\n\r\n.green-blue {\r\n    color: rgb(13, 118, 122);\r\n}\r\n\r\n.more-blue {\r\n    color: rgb(9, 96, 136);\r\n}\r\n\r\n.blue {\r\n    color: rgb(9, 19, 148);\r\n}\r\n", ""]);
 
 
 /***/ }),

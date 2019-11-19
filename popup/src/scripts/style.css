@@ -24,7 +24,7 @@ button i:hover {
 }
 
 .navbar {
-    color: rgb(1, 133, 122);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ button i:hover {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 

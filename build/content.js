@@ -12037,7 +12037,7 @@ module.exports = factory;
 
 exports = module.exports = __webpack_require__(103)(false);
 // Module
-exports.push([module.i, "#testing {\n    height: 200px;\n    width: 200px;\n    background-color: rgb(140, 15, 179);\n    border-radius: 50px;\n    font-size: 5em;\n    color: white;\n}\n\n.content-testing {\n    height: 200px;\n    width: 200px;\n    background-color: rgb(140, 15, 179);\n    border-radius: 50px;\n    font-size: 5em;\n    color: white;\n}", ""]);
+exports.push([module.i, "#testing {\r\n    height: 200px;\r\n    width: 200px;\r\n    background-color: rgb(140, 15, 179);\r\n    border-radius: 50px;\r\n    font-size: 5em;\r\n    color: white;\r\n}\r\n\r\n.content-testing {\r\n    height: 200px;\r\n    width: 200px;\r\n    background-color: rgb(140, 15, 179);\r\n    border-radius: 50px;\r\n    font-size: 5em;\r\n    color: white;\r\n}", ""]);
 
 
 /***/ }),
