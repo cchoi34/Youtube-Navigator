@@ -31,6 +31,6 @@
     "gulp-util": "^3.0.7",
     "rimraf": "^2.5.0",
     "style-loader": "^1.0.0",
-    "webpack": "^2.6.0"
+    "webpack": "^5.75.0"
   }
 }
